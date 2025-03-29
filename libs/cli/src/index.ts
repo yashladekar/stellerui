@@ -16,18 +16,7 @@ async function main() {
         .name("cli")
         .description("CLI for managing projects")
         .version("0.1.0")
-        .addHelpText(
-            "after",
-            `
-    Examples:
-    $ cli init --name my-project
-    $ cli init --name my-project --directory ./my-project
-    `
-        );
 }
 
-main().catch((error) => {
-    console.error("An error occurred:", error);
-    process.exit(1);
-});
+main()
 
